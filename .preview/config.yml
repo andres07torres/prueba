@@ -1,0 +1,4 @@
+# Configuracion del orquestador de previews
+service: web
+port: 8000
+healthcheck: /health
