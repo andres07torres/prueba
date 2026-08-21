@@ -3,7 +3,6 @@ from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
-
 @app.get("/", response_class=HTMLResponse)
 def root():
     return """
@@ -17,7 +16,6 @@ def root():
     </html>
     """
 
-
 @app.get("/nueva-pantalla", response_class=HTMLResponse)
 def nueva_pantalla():
     return """
@@ -30,7 +28,6 @@ def nueva_pantalla():
     </body>
     </html>
     """
-
 
 @app.get("/health")
 def health():
