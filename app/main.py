@@ -12,7 +12,7 @@ def root():
     <body>
         <h1>Entorno de Preview Funcionando</h1>
         <p>Esta app se despliega automaticamente en el subdominio asignado.</p>
-        <p>v2 - Cambio de prueba para PR</p>
+        <p>v3 - Segundo cambio de prueba</p>
     </body>
     </html>
     """
