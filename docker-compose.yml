@@ -2,10 +2,10 @@ services:
   web:
     build: .
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.preview.rule=Host(`${PREVIEW_HOST}`)"
-      - "traefik.http.routers.preview.entrypoints=web"
-      - "traefik.http.services.preview.loadbalancer.server.port=8000"
+      traefik.enable: "true"
+      traefik.http.routers.preview.rule: "Host(`${PREVIEW_HOST}`)"
+      traefik.http.routers.preview.entrypoints: "web"
+      traefik.http.services.preview.loadbalancer.server.port: "8000"
     networks:
       - traefik
     restart: unless-stopped
